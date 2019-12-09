@@ -59,11 +59,11 @@ public class Operation {
      */
     public static void main(String[] args) throws AdminException, UserException {
         try {
-            am = new AdminManagement("C:\\Users\\Thong Nguyen\\Documents\\NetBeansProjects\\Assignment\\AssignmentFinal\\src\\data\\adminacc.txt"); //initialize AdminMan
+            am = new AdminManagement("src/data/adminacc.txt"); //initialize AdminMan
             am.loadAccounts();  //load Admins
-            um = new UserManagement("C:\\Users\\Thong Nguyen\\Documents\\NetBeansProjects\\Assignment\\AssignmentFinal\\src\\data\\useracc.txt"); //initialize UserMan
+            um = new UserManagement("src/data/useracc.txt"); //initialize UserMan
             um.loadAccounts();  //load Users
-            tm = new TransactionManagement("C:\\Users\\Thong Nguyen\\Documents\\NetBeansProjects\\Assignment\\AssignmentFinal\\src\\data\\transactionacc.txt"); //initialize TransactionMan
+            tm = new TransactionManagement("src/data/transactionacc.txt"); //initialize TransactionMan
             tm.loadTransactiotns(); //load Transactiotns
             String dateString = "";
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
